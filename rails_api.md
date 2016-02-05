@@ -123,3 +123,13 @@ User.find_by(name: 'david').try(:authenticate, 'mUc3m00RsqyRe') # => user
 ```
 
 Once we have our validations on the model, we can jump into our controller and set some actions to handle `authentication`.
+
+
+## POSTMAN
+postman is a browser extension to explore api's.
+
+[POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+
+… postman usage.
+
+##Course first project to Define...
