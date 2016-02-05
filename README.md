@@ -47,7 +47,7 @@ _Intermediary servers may improve system scalability by enabling load balancing 
 -__POST__ _Used to update a existing resource or create a new resource._
 
 
-Let's talk about JSON
+#Let's talk about JSON
 
 ![json.jpg](https://github.com/zenbakiak/rails_api_guide/blob/master/images/json.jpg)
 
@@ -55,4 +55,55 @@ Let's talk about JSON
 
 ##Not this one!
 
-The JavaScript Object Notation.
+###The JavaScript Object Notation.
+
+according to www.json.org
+
+__JSON__ (**J**ava**S**cript **O**bject **N**otation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.
+
+- It is just a collection of name/value pairs.
+
+```json
+{
+  "name": "Juan Pérez",
+  "email": "jc@iclialabs.com"
+}
+```
+
+- It could be an ordered list of values a.k.a Arrays
+
+```json
+[
+  { "name": "Andrea Legarreta", "email": "legarreta@gmail.com" },
+  { "name": "Pedro Páramo", "email": "pedro@gmail.com" },
+  { "name": "Lorem Pérez", "email": "lorem@gmail.com" }
+]
+```
+
+- Both.
+
+```json
+[
+  {
+    "name": "Andrea Legarreta",
+    "email": "legarreta@gmail.com",
+    "quotes": [
+      "El precio del dólar no afecta a los mexicanos",
+      "Hay amenazas de muerte, por decir lo del dólar (yeah, sure!)"
+    ]
+  },
+  {
+    "name": "Peña Nieto",
+    "email": "pena.nieto@mexico.gob",
+    "quotes": [
+      "Infraschuc, Infraschuc, Infraschuchur",
+      "No soy la señora de la casa",
+      "I guant to bi very cliar de economic policis shud not mak… shudnot meikus forged"
+    ]
+  }
+]
+```
+
+
+###Yeah yeah, whatever...
+![yeahyeah.jpg](https://github.com/zenbakiak/rails_api_guide/blob/master/images/yeahyeah.jpg)
