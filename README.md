@@ -11,7 +11,7 @@ An API is a service that offers a couple of functions or methods trought protoco
 
 Do you remeber about SOAP?
 
-[The 'nam dog]
+![thenam.gif](https://github.com/zenbakiak/rails_api_guide/blob/master/images/thenam.gif)
 
 
 RESTful services
