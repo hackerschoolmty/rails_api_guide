@@ -107,3 +107,91 @@ __JSON__ (**J**ava**S**cript **O**bject **N**otation) is a lightweight data-inte
 
 ###Yeah yeah, whatever...
 ![yeahyeah.jpg](https://github.com/zenbakiak/rails_api_guide/blob/master/images/yeahyeah.jpg)
+
+![hgames.jpg](https://github.com/zenbakiak/rails_api_guide/blob/master/images/hgames.jpg)
+
+# Quick quiz
+
+Rules: You can navigate through nodes with ```.``` for every key, if the value is an array navigate with ```[i]``` where i represent the index of the array element.
+
+
+```js
+# Example:
+
+# if you want to get the email of Lorem Ipsum:
+result.users[0].email
+
+# Get the mobile number of Lorem Ipsum
+results.users[0].phones[0].phone_number
+```
+
+- How can you get the home phone number of Antonio?
+- How can you get the zip_code of javier@mailinator.com who live in Insurgentes.
+
+```json
+result = {
+  "users": [
+    {
+      "name": "Lorem Ipsum",
+      "email": "lorem@mailinator.com",
+      "address": {
+        "street": "Paras 850",
+        "zip_code": 64000,
+        "state": "Nuevo León",
+        "country": "México"
+      },
+      "phones": [
+        {
+          "phone_type": "mobile",
+          "phone_number": 818181818181
+        },
+        {
+          "phone_type": "home",
+          "phone_number": 555555555555
+        }
+      ]
+    },
+    {
+      "name": "Javiér Pérez",
+      "email": "javier@mailinator.com",
+      "address": {
+        "street": "Insurgentes 300",
+        "zip_code": 08500,
+        "state": "Ciudad de México",
+        "country": "México"
+      },
+      "phones": [
+        {
+          "phone_type": "mobile",
+          "phone_number": 53456798
+        },
+        {
+          "phone_type": "home",
+          "phone_number": 1234567
+        }
+      ]
+    },
+    {
+      "name": "Antonio",
+      "email": "antonio@mailinator.com",
+      "address": {
+        "street": "Escobedo 200",
+        "zip_code": 33456,
+        "state": "Guadalajara",
+        "country": "México"
+      },
+      "phones": [
+        {
+          "phone_type": "mobile",
+          "phone_number": 818181818181
+        },
+        {
+          "phone_type": "home",
+          "phone_number": 90901909
+        }
+      ]
+    }
+  ]
+}
+```
+
