@@ -6,8 +6,10 @@
 
 #####Ok, that's not a good start.
 
-An API is a service that offers a couple of functions or methods trought protocols in order to communicate with another system.
+An API is a service that offers a couple of functions or methods throught protocols in order to communicate with another system.
 
+
+Examples: Facebook API, Paypal, Conekta, Google, Twitter, etc.
 
 Do you remeber about SOAP?
 
@@ -126,7 +128,7 @@ results.users[0].phones[0].phone_number
 ```
 
 - How can you get the home phone number of Antonio?
-- How can you get the zip_code of javier@mailinator.com who live in Insurgentes.
+- How can you get the zip_code of javier@mailinator.com who lives in Insurgentes.
 
 ```json
 result = {
