@@ -11,7 +11,7 @@ An API is a service that offers a couple of functions or methods throught protoc
 
 Examples: Facebook API, Paypal, Conekta, Google, Twitter, etc.
 
-Do you remeber <SOAP>?
+Do you remeber SOAP?
 
 ![thenam.gif](https://github.com/zenbakiak/rails_api_guide/blob/master/images/thenam.gif)
 
