@@ -83,6 +83,8 @@ end
 
 The Rails application must authenticate users by their authentication token and email if present:
 
+http://apidock.com/rails/v3.2.3/ActionController/HttpAuthentication/Token/ControllerMethods/authenticate_with_http_token
+
 ```ruby
 class ApplicationController < ActionController::Base
   before_filter :authenticate_user_from_token!
