@@ -9,10 +9,11 @@ you can send a key option that will be the prefix of the object cache on a patte
 
 
 ```ruby
-cache(options = nil) # options: ```{key, expires_in, compress, force, race_condition_ttl}```
+cache(options = nil) # options: {key, expires_in, compress, force, race_condition_ttl}
 ```
 
 for example:
+
 ```ruby
 class ProductSerializer < ActiveModel::Serializer
   cache key: 'product', expires_in: 2.hours
