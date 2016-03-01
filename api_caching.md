@@ -17,6 +17,11 @@ for example:
 ```ruby
 class ProductSerializer < ActiveModel::Serializer
   cache key: 'product', expires_in: 2.hours
+
+  # if you don't want to specify the key
+  # table_name/id-updated_at_timestamp
+  # cached
+  # delegate :cache_key, to: :object
   attributes :name, :price
 end
 ```
@@ -33,3 +38,27 @@ class ShopSerializer < ActiveModel::Serializer
   has_many :products
 end
 ```
+
+But what happens if one or more products change but don't expire the shop cache?
+
+```ruby
+class Product < ActiveRecord::Base
+  belongs_to :shop, touch: true
+end
+
+# you may need to add this line to development.rb
+config.cache_store = :memory_store
+```
+
+### For production
+
+```ruby
+# Gemfile
+gem "dalli"
+gem "memcachier"
+...
+
+# production.rb
+config.cache_store = :dalli_store
+```
+
